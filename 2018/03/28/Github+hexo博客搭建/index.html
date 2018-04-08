@@ -87,7 +87,8 @@
 <meta property="og:description" content="博客记录个人信息，一般可以使用现成的各大门户网站提供的博客系统，然后自己把信息记录上去，然后作为一个程序员，我觉得还是自己搭建一个博客系统显得那么高大上。下面是就采用Github和Hexo进行搭建。 安装Hexo安装node.js到node.js官网下载node.js，并且安装 安装Hexo在本地磁盘中新建一个目录比如D:\hexo，用于安装Hexo。1.进入D:\hexo文件夹中2.在命令行中执">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/28/Github+hexo博客搭建/1.jpg">
-<meta property="og:updated_time" content="2018-04-03T06:06:12.835Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/28/Github+hexo博客搭建/2.jpg">
+<meta property="og:updated_time" content="2018-04-08T04:36:17.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github+hexo博客搭建">
 <meta name="twitter:description" content="博客记录个人信息，一般可以使用现成的各大门户网站提供的博客系统，然后自己把信息记录上去，然后作为一个程序员，我觉得还是自己搭建一个博客系统显得那么高大上。下面是就采用Github和Hexo进行搭建。 安装Hexo安装node.js到node.js官网下载node.js，并且安装 安装Hexo在本地磁盘中新建一个目录比如D:\hexo，用于安装Hexo。1.进入D:\hexo文件夹中2.在命令行中执">
@@ -211,6 +212,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-about">
+          <a href="/MySelf" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -296,8 +307,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Testing/" itemprop="url" rel="index">
-                    <span itemprop="name">Testing</span>
+                  <a href="/categories/杂文/" itemprop="url" rel="index">
+                    <span itemprop="name">杂文</span>
                   </a>
                 </span>
 
@@ -345,8 +356,13 @@
       
         <p>博客记录个人信息，一般可以使用现成的各大门户网站提供的博客系统，然后自己把信息记录上去，然后作为一个程序员，我觉得还是自己搭建一个博客系统显得那么高大上。下面是就采用Github和Hexo进行搭建。</p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p>到node.js官网下载node.js，并且安装</p>
-<h3 id="安装Hexo-1"><a href="#安装Hexo-1" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在本地磁盘中新建一个目录比如D:\hexo，用于安装Hexo。<br>1.进入D:\hexo文件夹中<br>2.在命令行中执行:<br>$ npm install -g hexo-cli<br>3.Hexo安装完成后，执行下面命令，该命令用于下载相关web页面<br>$ hexo init <folder><br>$ cd <folder><br>$ npm install<br>注：<folder>表示要创建的博客的文件夹名称<br><img src="/2018/03/28/Github+hexo博客搭建/1.jpg" title="This is an example image"></folder></folder></folder></p>
-<h2 id="创建Github博客仓库"><a href="#创建Github博客仓库" class="headerlink" title="创建Github博客仓库"></a>创建Github博客仓库</h2><h2 id="编写博客与GitHub部署"><a href="#编写博客与GitHub部署" class="headerlink" title="编写博客与GitHub部署"></a>编写博客与GitHub部署</h2>
+<h3 id="安装Hexo-1"><a href="#安装Hexo-1" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在本地磁盘中新建一个目录比如D:\hexo，用于安装Hexo。<br>1.进入D:\hexo文件夹中<br>2.在命令行中执行:<br>$ npm install -g hexo-cli<br>3.Hexo安装完成后，执行下面命令，该命令用于下载相关web页面<br>$ hexo init <folder><br>$ cd <folder><br>$ npm install<br>注：<folder>表示要创建的博客的文件夹名称<br>4.创建好博客的目录结构内容<br><img src="/2018/03/28/Github+hexo博客搭建/1.jpg"></folder></folder></folder></p>
+<h2 id="创建Github博客仓库"><a href="#创建Github博客仓库" class="headerlink" title="创建Github博客仓库"></a>创建Github博客仓库</h2><h2 id="编写博客与GitHub部署"><a href="#编写博客与GitHub部署" class="headerlink" title="编写博客与GitHub部署"></a>编写博客与GitHub部署</h2><h3 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h3><p>1.在用户自定义的博客目录下执行如下命令：<br>$ hexo new [layout] &lt;title&gt;</p>
+<p>新建一个layout型的文件&lt;title&gt;表示文件类型，[layout]可以省略，如果省略表示创建一篇普通博客。<br>[layout]通常有多种类型：post（文章详情页）、page（导航标签页）、draft</p>
+<p>2.博客中插入资源(下面内容引用自Hexo官网)<br>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。<br>_config.yml<br>post_asset_folder: true<br>当资源文件管理功能打开后，Hexo将会在你每一次通过 hexo new [layout] &lt;title&gt; 命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。<br>比如：<br>{ % asset_path slug %}<br>{ % asset_img slug [title] %}<br>{ % asset_link slug [title] %}<br>下面的图片的引入方式：<br>{ % asset_img example.jpg This is an example image %}</p>
+<p>3.创建分类：<br>hexo new page &lt;title&gt;<br>title 是自定义的类型:<br><img src="/2018/03/28/Github+hexo博客搭建/2.jpg"></p>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>新建好博客后，执行下面命令<br>文章编辑好之后，运行生成、部署命令：<br>hexo clean //清理<br>hexo g  //生成静态文件<br>hexo d  //部署<br>当然你也可以执行下面的命令，相当于上面两条命令的效果<br>hexo clean<br>hexo d -g</p>
+
       
     </div>
     
@@ -473,7 +489,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -518,7 +534,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo-1"><span class="nav-number">1.2.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Github博客仓库"><span class="nav-number">2.</span> <span class="nav-text">创建Github博客仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编写博客与GitHub部署"><span class="nav-number">3.</span> <span class="nav-text">编写博客与GitHub部署</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo-1"><span class="nav-number">1.2.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Github博客仓库"><span class="nav-number">2.</span> <span class="nav-text">创建Github博客仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编写博客与GitHub部署"><span class="nav-number">3.</span> <span class="nav-text">编写博客与GitHub部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建博客"><span class="nav-number">3.1.</span> <span class="nav-text">新建博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署"><span class="nav-number">3.2.</span> <span class="nav-text">部署</span></a></li></ol></li></ol></div>
             
 
           </div>
